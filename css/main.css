@@ -1,25 +1,25 @@
+/* giving all the conent on my page these styles */
 * {
-    /* giving all the conent on my page these styles */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-section {
 /* setting the styles for my section */
+section {
     position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: rgb(248, 158, 122);
+    background-color: burlywood;
 
 }
 
+/* setting he style for my header */
 header {
-    /* setting he style for my header */
     position: relative;
     top: 0;
     width: 100%;
@@ -28,8 +28,8 @@ header {
     justify-content: space-between;
     align-items: center;
 
-}
 /* setting the styles for my logo on the header */
+}
 header .main-logo {
     position: relative;
     color: chocolate;
@@ -38,6 +38,8 @@ header .main-logo {
     letter-spacing: 1px;
 
 }
+
+
 /* setting the styles on a tag on my anvbar */
 header .navBar a {
     color: chocolate;
@@ -48,6 +50,8 @@ header .navBar a {
     border-radius: 15px;
 
 }
+
+
 /* changing the color of my a tag on the navbar once hovered */
 header .navBar a:hover {
     color: black;
@@ -70,6 +74,8 @@ header .navBar a:hover {
     height: 20%;
     float: right;
 }
+
+
  /* setting the style of the image in the .leftContent class */
 .leftContent img {
 

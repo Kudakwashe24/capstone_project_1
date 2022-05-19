@@ -1,31 +1,9 @@
-# capstone_project_1
-Creating an Online Store Using HTML and CSS 
-
 <h1 align="center"><project-name>Online Store using Capstone</h1>
 
 <p align="center"><project-description>Creating an Online Store Using HTML and CSS</p>
 
-## Links
 
-- [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
-
-- [Live](<Homepage url> "Live View")
-
-- [Bugs](https://github.com/Rohit19060/<project-name>/issues "Issues Page")
-
-- [API](<API Link> "API")
-
-## Screenshots
-
-![Home Page](/screenshots/1.png "Home Page")
-
-![](/screenshots/2.png)
-
-![](/screenshots/3.png)
-
-## Available Commands
-
-In the project directory, you can run:
+In the project directory, y can run:
 
 ### `npm start" : "react-scripts start"`,
 
