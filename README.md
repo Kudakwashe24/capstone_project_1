@@ -1,9 +1,9 @@
 # capstone_project_1
 Creating an Online Store Using HTML and CSS 
 
-<h1 align="center"><project-name></h1>
+<h1 align="center"><project-name>Online Store using Capstone</h1>
 
-<p align="center"><project-description></p>
+<p align="center"><project-description>Creating an Online Store Using HTML and CSS</p>
 
 ## Links
 
