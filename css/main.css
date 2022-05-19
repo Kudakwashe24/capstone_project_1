@@ -1,0 +1,232 @@
+* {
+    /* giving all the conent on my page these styles */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section {
+/* setting the styles for my section */
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(248, 158, 122);
+
+}
+
+header {
+    /* setting he style for my header */
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/* setting the styles for my logo on the header */
+header .main-logo {
+    position: relative;
+    color: chocolate;
+    font-size: 30px;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+}
+/* setting the styles on a tag on my anvbar */
+header .navBar a {
+    color: chocolate;
+    background-color: cornsilk;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 15px;
+
+}
+/* changing the color of my a tag on the navbar once hovered */
+header .navBar a:hover {
+    color: black;
+}
+
+/* setting the styles of my content class */
+.content {
+    max-width: 650px;
+    margin: 70px 100px;
+}
+
+/* setting the styles of my row class */
+.row {
+    margin-bottom: 100px;
+}
+
+/* setting the style of my leftCont class */
+.leftContent {
+    width: 50%;
+    height: 20%;
+    float: right;
+}
+ /* setting the style of the image in the .leftContent class */
+.leftContent img {
+
+    width: 500px;
+    height: auto;
+    margin-left: 140px;
+    object-position: right top;
+    margin-top: -120px;
+}
+
+/* styling my .innerContent class */
+.innerContent {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+/* styling heading of my .innerContent class */
+.innerContent h2 {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 31px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 10px;
+
+}
+
+/* styling the paragraph of my .innerContent */
+.innerContent p {
+    text-align: left;
+    color: rgb(94, 55, 28);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* styling the button */
+.innerContent-btn {
+    color: black;
+    background-color: chocolate;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 6px;
+
+}
+
+/* styling button when hovered */
+.innerContent-btn:hover {
+    color: blanchedalmond;
+    background-color: cadetblue;
+}
+
+/* styling my media-icons class */
+.media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* styling a tag on my .media-icons class */
+.media-icons a {
+    position: relative;
+    color: rgb(10, 10, 219);
+    font-size: 20px;
+}
+
+/* styling the margin of a tag of my .media-icons */
+.media-icons a:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* hiding my checkbox label */
+label {
+    display: none;
+}
+
+#check-box {
+    z-index: 3;
+    display: none;
+}
+
+
+/*responsive styles for the page*/
+
+@media (max-width: 900px) {
+    header .navBar {
+        display: none;
+    }
+
+    label {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    label:hover {
+        color: black;
+    }
+
+    label .close-btn {
+        display: none;
+    }
+
+    #check-box:checked~header .navBar {
+        z-index: 2;
+        position: fixed;
+        background: lightblue;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check-box:checked~header .navBar a {
+        font-weight: 800;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+
+    }
+
+    #check-box:checked~header label .menu-btn {
+        display: none;
+    }
+
+    #check-box:checked~header label .close-btn {
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+
+    label .menu-btn {
+        position: absolute;
+    }
+
+    header .main-logo {
+        position: absolute;
+        bottom: -7px;
+    }
+
+    .content .innerContent h2 {
+        font-size: 25px;
+        line-height: 40px;
+
+    }
+
+    .content .innerContent p {
+        font-size: 15px;
+    }
+}
